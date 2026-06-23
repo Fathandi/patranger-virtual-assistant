@@ -1,0 +1,60 @@
+# Node / TypeScript
+node_modules/
+dist/
+build/
+.cache/
+.temp/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Local runtime / session (whatsapp-web.js)
+.wadata/
+.wadata-*/
+*.session.*
+*.data.json
+session*.json
+.wwebjs_cache
+
+# Puppeteer / Chrome user data (avoid committing)
+.puppeteer/
+*.local-chromium*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor (VSCode)
+.vscode/
+*.code-workspace
+
+# PM2
+pm2-*.json
+
+# MySQL dumps (if any)
+*.sql
+*.sql.gz
+
+# ---
+# SECURITY: Hide everything under agent/ from being committed
+# ---
+agent/**
+!/agent
+
+# Re-allow commonly safe docs only if you still want them tracked.
+# Remove these allow rules if you truly want *zero* agent tracked.
+#
+# !/agent/README.md
+# !/agent/Business-&-System-Requirement-Summary.md
+
+
